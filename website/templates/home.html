@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %} 
+<br/>
+
+<div>
+Hello, {{user.username}}!
+
+Temperature in {{user.location}} is {{result}}
+
+</div>
+
+{% endblock %}

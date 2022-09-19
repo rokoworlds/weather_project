@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Weather {% endblock %}
+
+
+{% block content %} 
+
+<form method="POST">
+    <br/>
+    <h3 align="center">  Current weather data for any location </h3>
+    
+    <div class="form-group">
+        <label for="email">Search for city...</label>
+        <input type="text" id="city" name="city" class="form-control" placeholder="Search"/>
+    
+        <br/>
+
+        <div align="center">
+            <button class="btn" style="background-color: #FFCB42;" type="submit">Search</button>
+        </div>
+
+    </div>
+
+</form>
+
+<div>
+   Search result: {{result}}
+</div>
+
+{% endblock %}
